@@ -14,7 +14,7 @@ library(org.Hs.eg.db)
 library(tidyr)
 library(ReactomePA)
 
-setwd("M:/slides/RegSci_HBRS_seminar/")
+setwd() ##choose the directory where you files should be saved
 
 gse <- getGEO("GSE92592", GSEMatrix = TRUE)
 
