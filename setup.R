@@ -2,7 +2,13 @@ if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install(version = "3.18")
 
-BiocManager::install(c("GEOquery","DESeq2","ggplot2", "dplyr", "gplots", "pheatmap", "EnhancedVolcano", "EDASeq", "biomaRt", "tibble", "openxlsx", "clusterProfiler"))
+# Vector of all packages
+packages <- c("GEOquery", "DESeq2", "ggplot2", "dplyr", "gplots", "pheatmap", 
+              "EnhancedVolcano", "EDASeq", "biomaRt", "tibble", "writexl", 
+              "clusterProfiler", "org.Hs.eg.db", "tidyr", "ReactomePA")
+
+# Install packages
+BiocManager::install(packages)
 
 library(GEOquery)
 library(DESeq2)
@@ -14,5 +20,8 @@ library(EnhancedVolcano)
 library(EDASeq)
 library(biomaRt)
 library(tibble)
-library(openxlsx)
+library(writexl)
 library(clusterProfiler)
+library(org.Hs.eg.db)
+library(tidyr)
+library(ReactomePA)
