@@ -1,6 +1,6 @@
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install(version = "3.18")
+BiocManager::install(version = "3.20")
 
 # Vector of all packages
 packages <- c("GEOquery", "DESeq2", "ggplot2", "dplyr", "gplots", "pheatmap", 
