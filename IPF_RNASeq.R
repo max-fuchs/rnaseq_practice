@@ -14,7 +14,7 @@ library(org.Hs.eg.db)
 library(tidyr)
 library(ReactomePA)
 
-setwd() ##choose the directory where you files should be saved
+setwd(choose.dir()) ##choose the directory where you files should be saved
 
 gse <- getGEO("GSE92592", GSEMatrix = TRUE)
 
